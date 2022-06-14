@@ -18,11 +18,13 @@ const instance = new SortedArray(result)
 
 let sortedArray;
 
+console.log('Printing the sum of the array with a timeout...')
+
 instance.getArray().then(array => {
     sortedArray = array
     console.log(`The result of the concat array sorted is: [ ${sortedArray.toString()} ]`)
+    console.log('Printing the sum of the array with a timeout...')
 })
 
 
 console.log(`The result of the concat is: [ ${result} ]`)
-console.log('Printing the sum of the array with a timeout...')
