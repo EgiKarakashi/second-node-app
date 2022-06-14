@@ -18,7 +18,6 @@ const instance = new SortedArray(result)
 
 let sortedArray;
 
-console.log('Printing the sum of the array with a timeout...')
 
 instance.getArray().then(array => {
     sortedArray = array

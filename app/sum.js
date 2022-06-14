@@ -1,10 +1,6 @@
-const fs = require('fs')
+const numbersFromJson = require('./readfile')
 
-let numbersFromJson = fs.readFileSync('array.json')
-
-let numbersJson = JSON.parse(numbersFromJson)
-
-const numbers = numbersJson.number
+const numbers = numbersFromJson.numbersJson.number
 
 const sumJson = numbers.reduce((sum, nums) => sum + nums, 0)
 
